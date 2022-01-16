@@ -12,7 +12,7 @@ const RandomCard = () => {
         gutterBottom
         variant="h5"
       >
-        Random RandomCard
+        Random card
       </Typography>
       <Code>
         /silvie random <CodeParam optional>set</CodeParam>
