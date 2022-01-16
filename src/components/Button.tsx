@@ -6,6 +6,7 @@ import React from "react";
 
 interface ButtonProps {
     backgroundColor: string,
+    backgroundColorHover: string,
     text: string,
     description: string,
     icon: IconDefinition,
@@ -15,6 +16,7 @@ interface ButtonProps {
 
 const Button: React.FC<ButtonProps> = ({
     backgroundColor,
+    backgroundColorHover,
     text,
     description,
     icon,
@@ -46,6 +48,10 @@ const Button: React.FC<ButtonProps> = ({
                 mt: '32px',
                 p: '1px',
                 width: sizes.width,
+
+                '&:hover': {
+                    backgroundColor: backgroundColorHover,
+                }
             }}
         >
             <Box
