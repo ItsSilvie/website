@@ -106,7 +106,7 @@ const Header = () => {
               <Button
                 backgroundColor="#5E8DE9"
                 backgroundColorHover="#3C73DE"
-                href="https://discord.gg/KrPepDcBRh"
+                href="https://discord.gg/bC6uWYvM4G"
                 text="Live Preview"
                 description="on our test server"
                 icon={faDiscord}
