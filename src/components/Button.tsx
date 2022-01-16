@@ -1,22 +1,24 @@
 import { IconDefinition } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Button as MUIButton, Typography } from "@mui/material";
+import { Link, Typography } from "@mui/material";
 import { Box } from "@mui/system";
 import React from "react";
 
 interface ButtonProps {
-    backgroundColor: string,
-    backgroundColorHover: string,
-    text: string,
-    description: string,
-    icon: IconDefinition,
-    lineColor: string,
-    size?: 'large' | 'regular',
+    backgroundColor: string
+    backgroundColorHover: string
+    href: string
+    text: string
+    description: string
+    icon: IconDefinition
+    lineColor: string
+    size?: 'large' | 'regular'
 }
 
 const Button: React.FC<ButtonProps> = ({
   backgroundColor,
   backgroundColorHover,
+  href,
   text,
   description,
   icon,
@@ -36,21 +38,30 @@ const Button: React.FC<ButtonProps> = ({
     sizes.iconPadding = '13px';
   }
   return (
-    <MUIButton
-      variant='contained'
+    <Link
+      href={href}
       sx={{
         alignItems: 'center',
         backgroundColor,
         display: 'flex',
         borderRadius: 1.5,
         boxShadow: '0px 4px 4px rgba(0, 0, 0, 0.25)',
+        color: '#fff',
+        cursor: 'pointer',
         justifyContent: 'flex-end',
         my: 0.5,
         p: '1px',
+        textDecoration: 'none',
         width: sizes.width,
 
         '&:hover': {
           backgroundColor: backgroundColorHover,
+          textDecoration: 'none',
+        },
+
+        '&:focus': {
+          backgroundColor: backgroundColorHover,
+          textDecoration: 'none',
         }
       }}
     >
@@ -95,7 +106,7 @@ const Button: React.FC<ButtonProps> = ({
           icon={icon}
         />
       </Box>
-    </MUIButton>
+    </Link>
   )
 }
 

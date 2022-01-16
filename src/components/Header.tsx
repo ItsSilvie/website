@@ -84,6 +84,7 @@ const Header = () => {
               <Button
                 backgroundColor="#5865F2"
                 backgroundColorHover="#3542EC"
+                href="https://discord.com/api/oauth2/authorize?client_id=930856109189767188&amp;permissions=412317142016&amp;scope=bot%20applications.commands"
                 text="Materialize"
                 description="invite to your server"
                 icon={faDiscord}
@@ -105,6 +106,7 @@ const Header = () => {
               <Button
                 backgroundColor="#5E8DE9"
                 backgroundColorHover="#3C73DE"
+                href="https://discord.gg/KrPepDcBRh"
                 text="Live Preview"
                 description="on our test server"
                 icon={faDiscord}
@@ -113,6 +115,7 @@ const Header = () => {
               <Button
                 backgroundColor="#8E4FF1"
                 backgroundColorHover="#752AEA"
+                href="https://github.com/ItsSilvie/bot"
                 text="Source Code"
                 description="share and innovate"
                 icon={faGithub}
