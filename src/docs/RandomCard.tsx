@@ -1,6 +1,7 @@
 import { Box, Divider, Typography } from '@mui/material';
 import React from 'react';
 import Code, { CodeDefinitions, CodeParam } from '../components/Code';
+import Param from '../components/Code/Param';
 import Collapsible from '../components/Collapsible';
 
 const RandomCard = () => {
@@ -27,7 +28,7 @@ const RandomCard = () => {
             param: 'set',
           }]}
         />
-        {/* <Box
+        <Box
           sx={{
             my: 1,
             py: 1,
@@ -36,13 +37,21 @@ const RandomCard = () => {
           <Divider />
         </Box>
         <Typography gutterBottom>
-          Topics are prompted by Silvie:
+          Silvie will pick a random set to return a random card from:
         </Typography>
         <Box
           component="img"
-          alt="Gameplay help topic prediction"
-          src="https://img.silvie.org/web/gameplay-help-topic-prediction.png"
-        /> */}
+          alt="Random card result"
+          src="https://img.silvie.org/web/random-card.png"
+        />
+        <Typography gutterBottom>
+          If a <Param>set</Param> is specified, Silvie will show a list of available sets to choose from:
+        </Typography>
+        <Box
+          component="img"
+          alt="Random card result"
+          src="https://img.silvie.org/web/random-card-prediction.png"
+        />
       </Collapsible>
     </>
   )
