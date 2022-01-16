@@ -1,12 +1,15 @@
-import { Box } from '@mui/system';
+import { Box, ThemeProvider } from '@mui/system';
 import React from 'react';
 import Header from './components/Header'
+import theme from './theme';
 
 function App() {
   return (
-    <Box>
-      <Header></Header>
-    </Box>
+    <ThemeProvider theme={theme}>
+      <Box>
+        <Header></Header>
+      </Box>
+    </ThemeProvider>
   );
 }
 
