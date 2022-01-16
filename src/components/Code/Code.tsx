@@ -22,7 +22,7 @@ const Code: React.FC<CodeProps> = ({
     px: 2,
     py: 1,
   } as {
-    [key: string]: number | string | undefined
+    [key: string]: number | string | undefined,
   };
 
   if (inline) {
@@ -36,9 +36,8 @@ const Code: React.FC<CodeProps> = ({
 
   return (
     <Box
-      // @ts-ignore
       sx={{
-        display,
+        display: display as string,
       }}
     >
       <Typography

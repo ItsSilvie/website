@@ -26,9 +26,9 @@ const Header = () => {
             sx={{
               boxSizing: 'border-box',
               display: 'flex',
-                alignItems: 'center',
-                flexDirection: 'column',
-                justifyContent: 'center',
+              alignItems: 'center',
+              flexDirection: 'column',
+              justifyContent: 'center',
               height: '100%',
               py: 7,
               textAlign: 'center',

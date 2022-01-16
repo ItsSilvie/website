@@ -5,11 +5,11 @@ const Footer = () => {
   return (
     <>
       <Box
-          sx={{
-            my: 1,
-            py: 1,
-          }}
-        >
+        sx={{
+          my: 1,
+          py: 1,
+        }}
+      >
         <Divider />
       </Box>
       <Box component="footer">
