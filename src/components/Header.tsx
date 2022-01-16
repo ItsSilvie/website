@@ -12,7 +12,6 @@ const Header = () => {
                 backgroundColor: '#444444',
                 boxShadow: '0px 4px 4px rgba(0, 0, 0, 0.25)',
                 height: 420,
-                mb: 2,
             }}
         >
             <Grid
