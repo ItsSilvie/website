@@ -8,10 +8,7 @@ import RandomCard from '../docs/RandomCard';
 
 const Body = () => {
   return (
-    <Box
-      component="main"
-      sx={{ p: 3 }}
-    >
+    <Box component="section">
       <Article>
         <Typography>
           Silvie is a fan-made open source Grand Archive Discord bot which provides a range of useful chat commands.
@@ -97,6 +94,12 @@ const Body = () => {
         <Typography>
           Click on the <strong>Source Code</strong> button in the header to be taken to the relevant repo. This is also where you can report bugs if Silvie starts misbehaving.
         </Typography>
+        <Box
+          component="img"
+          alt="Silvie build status"
+          src="https://img.shields.io/github/deployments/ItsSilvie/bot/silvie?label=Build&amp;logo=heroku&amp;style=for-the-badge"
+          sx={{ mt: 2 }}
+        />
       </Article>
     </Box>
   );
