@@ -168,7 +168,17 @@ const Header = () => {
             </Box>
           </Box>
         </Grid>
-        <Grid item xs={12} sm={12} md={8}>
+        <Grid
+          item
+          xs={12}
+          sm={12}
+          md={8}
+          sx={{
+            '@media screen and (max-width: 899px)': {
+              display: 'none',
+            },
+          }}
+        >
           <Box
             role="presentation"
             sx={{
@@ -197,7 +207,7 @@ const Header = () => {
                 flexGrow: 1,
                 minWidth: 192,
 
-                '@media screen and (max-width: 1219px)': {
+                '@media screen and (max-width: 1199px)': {
                   display: 'none',
                 },
               }}

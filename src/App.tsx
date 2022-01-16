@@ -1,3 +1,4 @@
+import { Container } from '@mui/material';
 import { Box, ThemeProvider } from '@mui/system';
 import React from 'react';
 import Body from './components/Body';
@@ -10,13 +11,13 @@ function App() {
     <ThemeProvider theme={theme}>
       <Box>
         <Header />
-        <Box
+        <Container
           component="main"
           sx={{ p: 3 }}
         >
           <Body />
           <Footer />
-        </Box>
+        </Container>
       </Box>
     </ThemeProvider>
   );
