@@ -39,13 +39,13 @@ const Button: React.FC<ButtonProps> = ({
     <MUIButton
       variant='contained'
       sx={{
+        alignItems: 'center',
         backgroundColor,
         display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'flex-end',
         borderRadius: 1.5,
         boxShadow: '0px 4px 4px rgba(0, 0, 0, 0.25)',
-        mt: '32px',
+        justifyContent: 'flex-end',
+        my: 0.5,
         p: '1px',
         width: sizes.width,
 

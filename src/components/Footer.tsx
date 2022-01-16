@@ -13,33 +13,6 @@ const Footer = () => {
         <Divider />
       </Box>
       <Box component="footer">
-        <Typography sx={{
-          color: '#767676',
-        }}>
-          Created by
-          {' '}
-          <Link
-            href="https://linktr.ee/pichucollector"
-            rel="noopener noreferrer"
-          >
-            PichuFan
-          </Link>
-          {' '}
-          <small>
-            (
-            <Link
-              href="https://discordapp.com/users/172329123111370752"
-              rel="noopener noreferrer"
-              sx={{
-                color: '#767676'
-              }}
-            >
-              inb4#9169
-            </Link>
-            {' '}
-            on the Grand Archive Discord server)
-          </small>
-        </Typography>
         <Typography
           sx={{
             color: '#767676',
