@@ -53,7 +53,7 @@ const Body = () => {
         >
           <CardSearch />
         </Box>
-        <Box
+        {/* <Box
           sx={{
             borderLeft: '2px solid #5865F2',
             mb: 2,
@@ -61,7 +61,7 @@ const Body = () => {
           }}
         >
           <GameplayHelp />
-        </Box>
+        </Box> */}
         <Box
           sx={{
             borderLeft: '2px solid #5865F2',

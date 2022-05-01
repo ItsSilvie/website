@@ -1,4 +1,4 @@
-import { Box, Divider, Typography } from '@mui/material';
+import { Box, Divider, Link, Typography } from '@mui/material';
 import React from 'react';
 import Code, { CodeDefinitions, CodeParam } from '../components/Code';
 import Collapsible from '../components/Collapsible';
@@ -14,10 +14,12 @@ const CardSearch = () => {
         Card search
       </Typography>
       <Code>
-        /silvie search <CodeParam>set</CodeParam> <CodeParam>card</CodeParam>
+        /silvie index <CodeParam>set</CodeParam> <CodeParam>card</CodeParam>
       </Code>
       <Typography gutterBottom>
-        Reveals information about a given card in a given set.
+        Reveals information about a given card in a given set from the Grand Archive Index (
+        <Link href="https://index.gatcg.com">index.gatcg.com</Link>
+        ).
       </Typography>
       <Collapsible>
         <CodeDefinitions
