@@ -2,8 +2,8 @@ import { Link, Typography } from '@mui/material';
 import { Box } from '@mui/system';
 import React from 'react';
 import Article from './Article';
+import AccountCommands from '../docs/AccountCommands';
 import CardSearch from '../docs/CardSearch';
-import GameplayHelp from '../docs/GameplayHelp';
 import RandomCard from '../docs/RandomCard';
 
 const Body = () => {
@@ -53,22 +53,22 @@ const Body = () => {
         >
           <CardSearch />
         </Box>
-        {/* <Box
+        <Box
           sx={{
             borderLeft: '2px solid #5865F2',
             mb: 2,
             pl: 2,
           }}
         >
-          <GameplayHelp />
-        </Box> */}
+          <RandomCard />
+        </Box>
         <Box
           sx={{
             borderLeft: '2px solid #5865F2',
             pl: 2,
           }}
         >
-          <RandomCard />
+          <AccountCommands />
         </Box>
       </Article>
       <Article title="Get Silvie">
