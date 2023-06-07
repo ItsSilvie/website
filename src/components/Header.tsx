@@ -150,7 +150,7 @@ const Header = () => {
                     fontSize: 12,
                   }}
                 >
-                  GA Discord:
+                  GA Discord: PichuFan (username:
                   {' '}
                   <Link
                     href="https://discordapp.com/users/172329123111370752"
@@ -164,8 +164,9 @@ const Header = () => {
                       }
                     }}
                   >
-                    inb4#9169
+                    inb4
                   </Link>
+                  )
                 </Box>
               </Typography>
             </Box>
