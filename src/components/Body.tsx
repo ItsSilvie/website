@@ -5,6 +5,7 @@ import Article from './Article';
 import AccountCommands from '../docs/AccountCommands';
 import CardSearch from '../docs/CardSearch';
 import RandomCard from '../docs/RandomCard';
+import CardPrices from '../docs/CardPrices';
 
 const Body = () => {
   return (
@@ -61,6 +62,15 @@ const Body = () => {
           }}
         >
           <RandomCard />
+        </Box>
+        <Box
+          sx={{
+            borderLeft: '2px solid #5865F2',
+            mb: 2,
+            pl: 2,
+          }}
+        >
+          <CardPrices />
         </Box>
         <Box
           sx={{

@@ -3,7 +3,7 @@ import React from 'react';
 import Code, { CodeDefinitions, CodeParam } from '../components/Code';
 import Collapsible from '../components/Collapsible';
 
-const CardSearch = () => {
+const CardPrices = () => {
   return (
     <>
       <Typography
@@ -11,15 +11,21 @@ const CardSearch = () => {
         gutterBottom
         variant="h5"
       >
-        Card search
+        Card prices
       </Typography>
       <Code>
-        /silvie index <CodeParam>set</CodeParam> <CodeParam>card</CodeParam>
+        /silvie prices <CodeParam>set</CodeParam> <CodeParam>card</CodeParam>
       </Code>
       <Typography gutterBottom>
-        Reveals information about a given card in a given set from the Grand Archive Index (
-        <Link href="https://index.gatcg.com">index.gatcg.com</Link>
-        ).
+        Reveals price information about a given card in a given set using data from
+        {' '}
+        <Link
+          href="https://tcgplayer.pxf.io/KjAXg9?u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Fgrand-archive%2Fproduct"
+          rel="noopener noreferrer"
+        >
+          TCGplayer
+        </Link>
+        .
       </Typography>
       <Collapsible>
         <CodeDefinitions
@@ -45,7 +51,7 @@ const CardSearch = () => {
         <Box
           component="img"
           alt="Card search prediction"
-          src="https://img.silvie.org/web/card-search-set-prediction.png"
+          src="https://img.silvie.org/web/card-pricing-set-prediction.png"
         />
         <Typography gutterBottom>
           Card names can be full or partial:
@@ -53,40 +59,22 @@ const CardSearch = () => {
         <Box
           component="img"
           alt="Card name partial"
-          src="https://img.silvie.org/web/card-search-card-partial.png"
+          src="https://img.silvie.org/web/card-pricing-card-partial.png"
         />
         <Typography gutterBottom>
-          The result is an embed with the full card text and attributes, along with an expandable image of the card (if present):
+          The result is an embed with foil and non-foil market, low and mid prices:
         </Typography>
         <Box
           component="img"
           alt="Card search result"
-          src="https://img.silvie.org/web/card-search-result.png"
+          src="https://img.silvie.org/web/card-pricing-result.png"
         />
-        <Typography gutterBottom>
-          Clicking on a thumbnail reveals the full card image:
+        <Typography>
+          Pricing data is updated every 24 hours.
         </Typography>
-        <Box
-          component="img"
-          alt="Card search images"
-          src="https://img.silvie.org/web/card-search-image.png"
-        />
       </Collapsible>
-      <Typography
-        component="h4"
-        gutterBottom
-        variant="h6"
-      >
-        Card images
-      </Typography>
-      <Code>
-        /silvie img <CodeParam>set</CodeParam> <CodeParam>card</CodeParam>
-      </Code>
-      <Typography gutterBottom>
-        If you&#39;re only wanting the card image, name and set, you can use this command instead to return a larger image embed.
-      </Typography>
     </>
   )
 }
 
-export default CardSearch;
+export default CardPrices;
