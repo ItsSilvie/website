@@ -15,9 +15,9 @@ const AccountCommands = () => {
       </Typography>
       <Typography>
         If you&#39;ve linked your Discord account to your Silvie.org account (
-          <Link href="https://portal.silvie.org/account">
+        <Link href="https://portal.silvie.org/account">
             here
-          </Link>
+        </Link>
         ), you can also make use of the following commands:
       </Typography>
       <Box sx={{
