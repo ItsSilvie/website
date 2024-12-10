@@ -20,7 +20,7 @@ const CardPrices = () => {
         Reveals price information about a given card in a given set using data from
         {' '}
         <Link
-          href="https://tcgplayer.pxf.io/KjAXg9?u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Fgrand-archive%2Fproduct"
+          href="https://partner.tcgplayer.com/silviebot?u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Fgrand-archive%2Fproduct"
           rel="noopener noreferrer"
         >
           TCGplayer
